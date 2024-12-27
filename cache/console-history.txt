@@ -1,0 +1,11 @@
+await token.burn(ethers.utils.parseUnits("10", 18));
+(await token.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")).toString();
+await token.transfer("0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199", ethers.utils.parseUnits("50", 18));
+(await token.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")).toString();
+const token = await ethers.getContractAt("MyToken", "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0");
+await token.burn(ethers.utils.parseUnits("10", 18));
+(await token.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")).toString();
+await token.burn(ethers.utils.parseUnits("10", 18));
+await token.transfer("0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199", ethers.utils.parseUnits("50", 18));
+(await token.balanceOf("0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266")).toString();
+const token = await ethers.getContractAt("MyToken", "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0");
